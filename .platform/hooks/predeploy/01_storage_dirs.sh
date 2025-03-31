@@ -27,4 +27,10 @@ echo "Setting permissions for current directories..."
 chmod -R 777 /var/app/current/storage
 chmod -R 777 /var/app/current/bootstrap/cache
 
+
+chown -R webapp:webapp /var/app/staging/storage
+chown -R webapp:webapp /var/app/staging/bootstrap/cache
+chown -R webapp:webapp /var/app/current/storage
+chown -R webapp:webapp /var/app/current/bootstrap/cache
+
 echo "Storage directories created and permissions set"
